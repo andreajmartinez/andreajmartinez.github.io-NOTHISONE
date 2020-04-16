@@ -1,5 +1,5 @@
 var mymap = L.map('mapid').setView([47.37, 8.33], 4)
-L.tileLayer('https://tile.osm.ch/switzerland/{z}/{x}/{y}.png').addTo(mymap)
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mymap)
 var marker = L.marker([47.380925, 8.537316]).addTo(mymap)
 var polygon = L.polygon([
   [47.382086, 8.544165],
