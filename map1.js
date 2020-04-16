@@ -1,4 +1,4 @@
-var mymap = L.map('mapid').setView([50, 8], 13)
+var mymap = L.map('mapid').setView([47, 8], 13)
 L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png').addTo(mymap)
 var marker = L.marker([47.380925, 8.537316]).addTo(mymap)
 var polygon = L.polygon([
