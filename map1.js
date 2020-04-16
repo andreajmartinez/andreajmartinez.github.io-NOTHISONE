@@ -1,5 +1,4 @@
-
-var mymap = L.map('mapid').setView([47.37, 8.33], 13)
+var mymap = L.map('mapid').setView([50, 8.33], 13)
 L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png').addTo(mymap)
 var marker = L.marker([47.380925, 8.537316]).addTo(mymap)
 var polygon = L.polygon([
@@ -11,6 +10,6 @@ var line = L.polygon([
   [47.377113, 8.552502],
   [47.276794, 8.544949]
 ]).addTo(mymap)
-polygon.bindPopup('Park Platzspitz.')
 marker.bindPopup('Zurich Bus Station.')
-line.blindPopup('Road to University Hospital of Zurich.')
+polygon.bindPopup('Park Platzspitz.')
+line.bindPopup('Road to University Hospital in Zurich')
