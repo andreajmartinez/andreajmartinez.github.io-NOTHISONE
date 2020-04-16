@@ -6,7 +6,7 @@ var polygon = L.polygon([
   [47.379333, 8.538436],
   [47.37873, 8.541666]
 ]).addTo(mymap)
-var line = L.line([
+var line = L.polyline([
   [47.377113, 8.552502],
   [47.276794, 8.544949]
 ]).addTo(mymap)
