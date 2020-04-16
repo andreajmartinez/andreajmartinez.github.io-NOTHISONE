@@ -1,18 +1,20 @@
-var mymap = L.map('mapid').setView([30.96, -92.42], 7)
+var mymap = L.map('mapid').setView([31.69, -100], 5)
 L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png').addTo(mymap)
-var superdome = L.marker([29.950923, -90.081621]).addTo(mymap)
+var houston = L.marker([29.801951, -95.355999]).addTo(mymap)
 var lakepont = L.polygon([
-  [30.03, -90.14],
-  [30.14, -89.70],
-  [30.37, -90.20],
-  [30.18, -89.87]
+  [36.491, -103.046],
+  [33.504, -94.125,
+  [29.916, -93.510],
+  [25.996, -97.377]
 ]).addTo(mymap)
-superdome.bindPopup('Mercedes Benz Superdome Stadium.')
-lakepont.bindPopup('Lake Pontchartrain.')
+houston.bindPopup('City of Houston.')
+southtexas.bindPopup('Area of Southern Texas.')
 var latlngs = [
-  [30.024, -90.15],
-  [30.35, -90.09]
+  [36.491, -103.046],
+  [33.504, -94.125,
+  [29.916, -93.510],
+  [25.996, -97.377]
 ]
-var lakecwsy = L.polyline([latlngs, { color: 'red' }]).addTo(mymap)
+var polyline = L.polyline([latlngs, { color: 'red' }]).addTo(mymap)
 mymap.fitBounds(polyline.getBounds())
-lakecwsy.bindPopup('lake Pontchartrain Cswy')
+polyline.bindPopup('lake Pontchartrain Cswy')
